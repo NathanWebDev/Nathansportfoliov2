@@ -261,6 +261,8 @@ nav > ul > li > a:hover::after {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: white;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   nav > ul > li:last-child a {
