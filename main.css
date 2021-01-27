@@ -257,7 +257,7 @@ nav > ul > li > a:hover::after {
   }
 
   nav > ul > li > a {
-    margin: 0px 20px 00px 0px;
+    padding: 0px 20px 0px 0px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: white;
