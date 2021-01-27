@@ -8,4 +8,5 @@ Css wise this website uses:
   1. Basic styling
   2. Media Queries
   3. Css transitions
+
 Thank you for checking out this project!
