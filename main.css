@@ -1,0 +1,277 @@
+/* Imported Fonts */
+@import url("https://use.typekit.net/old2par.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+/* Body and Universal Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/* Header Style */
+header {
+  margin: 0;
+}
+
+header > h1 {
+  font-family: din-condensed, sans-serif;
+  font-size: 75px;
+}
+
+/* Navigation Style */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  border: 5px solid black;
+}
+
+nav > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav > ul > li > a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  padding: 0px 30px;
+  color: white;
+  position: relative;
+}
+
+/* Navigation Animation */
+nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 250ms ease-in;
+}
+
+nav > ul > li > a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Home Style */
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./images/Stockcodingpic.jpeg");
+  background-size: cover;
+  border: 5px solid black;
+}
+
+.hometext {
+  display: flex;
+  flex-direction: column;
+}
+
+.home > .hometext > h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 52px;
+  margin-left: 10%;
+  color: white;
+}
+
+.home > .hometext > p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-left: 10%;
+}
+
+.home > .selfie {
+  width: 20%;
+  height: 20%;
+  border-radius: 10px;
+  margin: 20px 20px 20px 20px;
+}
+
+/* About Me Style */
+.aboutme {
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutme > .aboutmetext > h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 52px;
+  margin-left: 10%;
+  color: black;
+}
+
+.aboutme > .aboutmetext > p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 10%;
+}
+
+/* Projects Stlye */
+.projects {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./images/Projectsphoto.jpeg");
+  background-size: cover;
+  border: 5px solid black;
+}
+
+.projects > .projectstext > h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 52px;
+  text-align: center;
+  color: white;
+}
+
+.projects > .projectstext > p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.projects > .projectsalign {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.projects > .projectsalign > .projectsitem {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.projects > .projectsalign > .projectsitem > .projectsimage {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.projects > .projectsalign > .projectsitem > h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 35px;
+  color: white;
+}
+
+.projects > .projectsalign > .projectsitem > p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Contact Style */
+.contact > h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 52px;
+  margin-left: 10%;
+  color: black;
+}
+
+.contactalign {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactalign > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contact > .contactalign > form > textarea {
+  height: 20%;
+}
+
+.contact > .contactalign > form > button {
+  margin-top: 2%;
+  width: 100px;
+}
+
+.contact > .contactalign > .mapemail > p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.contact > .contactalign > .mapemail {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Transition Layout */
+@media all and (max-width: 1000px) {
+  .projects > .projectsalign {
+    flex-direction: column;
+  }
+
+  .contactalign {
+    flex-direction: column;
+  }
+
+  .contactalign > .mapemail > iframe {
+    width: 100%;
+  }
+}
+
+/* Mobile Layout */
+@media all and (max-width: 600px) {
+  header {
+    background-color: black;
+  }
+
+  h1 {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 52px;
+    text-align: center;
+    color: white;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav > ul {
+    display: flex;
+    padding-left: 0%;
+    list-style: none;
+  }
+
+  nav > ul > li > a {
+    margin: 0px 20px 00px 0px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+  }
+
+  nav > ul > li:last-child a {
+    margin-right: 0;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .home > .selfie {
+    width: 75%;
+  }
+}
