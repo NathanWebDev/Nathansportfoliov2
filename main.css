@@ -257,12 +257,10 @@ nav > ul > li > a:hover::after {
   }
 
   nav > ul > li > a {
-    padding: 0px 20px 0px 0px;
+    padding: 0px 10px 0px 0px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: white;
-    overflow: hidden;
-    white-space: nowrap;
   }
 
   nav > ul > li:last-child a {
