@@ -174,6 +174,10 @@ nav > ul > li > a:hover::after {
   color: white;
 }
 
+.projects > .projectsalign > .projectsitem > p > a {
+  color: darkgrey;
+}
+
 /* Contact Style */
 .contact > h2 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -214,6 +218,24 @@ nav > ul > li > a:hover::after {
 .contact > .contactalign > .mapemail {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.contact > .contactalign > .mapemail > .button {
+  width: 75px;
+  background-color: black;
+  border: 5px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.contact > .contactalign > .mapemail > .button > a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.contact > .contactalign > .mapemail > .button > a:hover {
+  text-decoration: underline;
 }
 
 /* Transition Layout */
